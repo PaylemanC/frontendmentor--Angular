@@ -1,10 +1,39 @@
+// @import './src/styles.scss';
+
+/*COLOR PALETTE*/
+$white: #FFFFFF;
+$black: #000000;
+$soft-purple: #b2b3eb;
+$aqua: #20ccd8;
+$soft-green: #aceb97;
+$soft-yellow: #f6e6a8;
+$pale-pink: #f8ebed;
+
+/* VARIABLES */
+
+
+/* MIXINS */
+@mixin flexbox ($flex-direction, $justify-content, $align-items, $gap: 16px) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+
 /*RESETS*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
   font-size: 62.5%;
+}
+
+p {
+  line-height: 1.5;
 }
