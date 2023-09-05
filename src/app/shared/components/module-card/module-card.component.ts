@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./module-card.component.scss']
 })
 export class ModuleCardComponent {
-
+  difficulties: string[] = ['Newbie', 'Junior'] //Intermediate, Advanced, Guru
 }
