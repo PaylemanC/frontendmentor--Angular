@@ -1,0 +1,16 @@
+
+@import './src/styles.scss';
+
+app-module-card {
+  @include flexbox(row, center, center, 64px);
+  flex-wrap: wrap;
+}
+
+main {
+  min-height: 86vh;
+  width: 100%;
+  @include flexbox(row, center, center, 0);
+  background-color: #80ebf3; 
+  font-size: 1.6rem;
+  padding: 40px;
+}
