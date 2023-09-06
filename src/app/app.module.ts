@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
+import { NewbieModule } from './newbie/newbie.module';
 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './pages/layout/layout.component';
@@ -18,7 +19,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NewbieModule
   ],
   providers: [],
   bootstrap: [AppComponent]
