@@ -7,10 +7,10 @@ app-module-card {
 }
 
 main {
-  min-height: 86vh;
+  min-height: 84vh;
   width: 100%;
   @include flexbox(row, center, center, 0);
-  background-color: #80ebf3; 
+  background-color: #80ebf3;
   font-size: 1.6rem;
   padding: 40px;
 }

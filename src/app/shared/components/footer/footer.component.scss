@@ -1,28 +1,36 @@
 @import './src/styles.scss';
 
 footer {
-  min-height: 14vh;
-  background-color: $pale-pink; 
+  min-height: 16vh;
+  background-color: $pale-pink;
+  text-align: center;
+}
+
+p, a {
+  font-size: 1.7rem;
+}
+
+.copyright {
+  padding: 8px 0;
 }
 
 ul {
   @include flexbox(row, center, center, 36px);
   list-style: none;
-  padding: 32px 16px;
   flex-wrap: wrap;
 }
 
-li:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out;
-  a {
-    color: #00636b;
+.links {
+  li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    a {
+      color: #00636b;
+    }
   }
-}
-
-a {
-  letter-spacing: 4px;
-  font-size: 1.7rem;
-  text-decoration: none;
-  color: #1c1c1c;
+  a {
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #1c1c1c;
+  }
 }
