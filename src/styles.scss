@@ -21,6 +21,10 @@ $pale-pink: #f8ebed;
   gap: $gap;
 }
 
+div[data-component="container"] {
+  @include flexbox(column, center, center, 0);
+  height: 100vh;
+}
 
 /*RESETS*/
 * {
