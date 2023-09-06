@@ -1,7 +1,47 @@
-.attribution {
-  font-size: 11px; text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dark-blue: hsl(218, 44%, 22%);
+
+* {
+  font-family: 'Outfit', sans-serif;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+div[data-component="container"] {
+  background-color: $light-gray;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 12px;
+  padding: 20px 16px;
+  width: 300px;
+  box-shadow: 2px 2px 40px #cfcfcf, -2px -2px 40px #ffffff;
+}
+
+.qr-code__img {
+  height: 256px;
+  width: 256px;
+  border-radius: 16px;
+  background: url('images/image-qr-code.png') no-repeat center / contain;
+}
+
+.qr-code__content {
+  text-align: center;
+  padding: 20px 10px;
+  .qr-code__tittle {
+    font-size: 2rem;
+    color: $dark-blue;
+    margin-bottom: 11px;
+  }
+  .qr-code__paragraph {
+    font-size: 1.5rem;
+    color: $grayish-blue;
+  }
 }
