@@ -7,10 +7,9 @@ app-module-card {
 }
 
 main {
-  min-height: 84vh;
-  width: 100%;
-  @include flexbox(row, center, center, 0);
-  background-color: #80ebf3;
+  @include flexbox(row, center, center, 40px);
+  flex-wrap: wrap;
+  background-color: #a8c4f3;
   font-size: 1.6rem;
-  padding: 40px;
+  padding: 48px 16px;
 }
