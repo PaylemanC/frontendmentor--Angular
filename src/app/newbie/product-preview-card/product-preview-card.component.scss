@@ -26,6 +26,11 @@ div[data-component="container"] {
   width: 346px;
 }
 
+.product__img {
+  background: url('images/image-product-mobile.jpg') no-repeat center / contain;
+  height: 242px;
+}
+
 .product__content {
   padding: 28px;
   .product__category {
@@ -62,6 +67,10 @@ div[data-component="container"] {
   .product__button {
     font-family: $montserrat;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
     padding: 12px;
     border-radius: 8px;
     border: none;
