@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 $dark-cyan: hsl(158, 36%, 37%);
+$darkest-cyan: #1a4031;
 $cream: hsl(30, 38%, 92%);
 $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
@@ -60,5 +61,16 @@ div[data-component="container"] {
   }
   .product__button {
     font-family: $montserrat;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    background-color: $dark-cyan;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      background-color: $darkest-cyan;
+    }
   }
 }
