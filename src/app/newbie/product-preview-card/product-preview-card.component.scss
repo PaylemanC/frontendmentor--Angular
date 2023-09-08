@@ -87,3 +87,19 @@ div[data-component="container"] {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+ .product-preview-card {
+  flex-direction: row;
+  width: initial;
+ }
+ .product__img {
+  background: url('images/image-product-desktop.jpg') no-repeat center / cover;
+  height: 100%;
+  width: 260px;
+  border-radius: 9px 0px 0 9px;
+ }
+ .product__content {
+  width: 268px;
+ }
+}
