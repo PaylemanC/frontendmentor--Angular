@@ -13,4 +13,5 @@ export class QrCodeComponent implements Challenge {
   description = 'Build the Frontend QR Code card.';
   languages = [Language.HTML, Language.CSS];
   difficulty = Difficulty.NEWBIE;
+  url = 'https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H'
 }

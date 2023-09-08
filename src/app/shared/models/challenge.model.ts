@@ -20,4 +20,5 @@ export interface Challenge {
   description: string;
   languages: Language[];
   difficulty: Difficulty;
+  url: string;
 }
