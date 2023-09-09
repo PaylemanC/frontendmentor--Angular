@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Challenge,  Difficulty, Language } from 'src/app/shared/models/challenge.model';
+import { Challenge,  Difficulty, Language, Status } from 'src/app/shared/models/challenge.model';
 
 @Component({
   selector: 'app-interactive-rating',
@@ -18,5 +18,6 @@ export class InteractiveRatingComponent implements Challenge {
     - See the "Thank you" card state after submitting a rating`;
   languages = [Language.HTML, Language.CSS, Language.TS];
   difficulty = Difficulty.NEWBIE;
+  status: Status = 'IN PROGRESS';
   url = 'https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI';
 }

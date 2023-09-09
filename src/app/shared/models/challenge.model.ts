@@ -13,6 +13,8 @@ export enum Language {
   TS = 'TS'
 }
 
+export declare type Status = 'COMPLETED' | 'IN PROGRESS';
+
 export interface Challenge {
   id: string | number;
   name: string;
@@ -20,5 +22,6 @@ export interface Challenge {
   description: string;
   languages: Language[];
   difficulty: Difficulty;
+  status: Status;
   url: string;
 }

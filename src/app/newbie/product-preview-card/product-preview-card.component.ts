@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Challenge, Difficulty, Language } from 'src/app/shared/models/challenge.model';
+import { Challenge, Difficulty, Language, Status } from 'src/app/shared/models/challenge.model';
 
 @Component({
   selector: 'app-product-preview-card',
@@ -13,5 +13,6 @@ export class ProductPreviewCardComponent implements Challenge {
   description = 'Build a responsive product (perfume) preview card.';
   languages = [Language.HTML, Language.CSS];
   difficulty = Difficulty.NEWBIE;
+  status: Status = 'COMPLETED';
   url = 'https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa';
 }
