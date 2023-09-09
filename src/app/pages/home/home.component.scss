@@ -9,7 +9,8 @@ app-module-card {
 main {
   @include flexbox(row, center, center, 40px);
   flex-wrap: wrap;
-  background-color: #a8c4f3;
+  // background-color: #a8c4f3;
+  background-color: $soft-purple;
   font-size: 1.6rem;
   padding: 48px 16px;
 }

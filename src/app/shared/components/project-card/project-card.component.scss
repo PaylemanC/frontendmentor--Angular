@@ -6,9 +6,9 @@
 }
 
 .project-card {
-  $border-color: #3e54a3;
-  $first-shadow: 10px 10px 0 #516ccd;
-  $second-shadow: 20px 20px 0 #6784eb;
+  $border-color: #2a2b31;
+  $first-shadow: 8px 8px 0 #70718f;
+  $second-shadow: 18px 18px 0 #2c2d41;
   width: 280px;
   transition: 0.15s all ease-in-out;
   border-radius: 10px;
@@ -22,9 +22,9 @@
     transform: translate(-20px, -20px);
     .project-info__arrow {
       transform: rotate(-45deg);
-      background-color: #dce4ff;
+      background-color: #c4c4eb;
       &:active {
-        background-color: #a8c4f3
+        background-color: $soft-purple;
       }
     }
   }
@@ -38,6 +38,7 @@
 }
 
 .project-info {
+
   padding-top: 20px;
   padding: 10px;
   @include flexbox(column, normal, normal, 20px);
@@ -68,8 +69,8 @@
   place-content: flex-start;
   li {
     list-style: none;
-    background: #dce4ff;
-    color: #3e54a3;
+    background: #c4c4eb;
+    color: #242d4f;
     font-weight: bold;
     padding: 0.3em 0.7em;
     border-radius: 15px;
