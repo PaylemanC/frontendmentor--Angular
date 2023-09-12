@@ -24,6 +24,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  &#end {
+    align-items: center;
+  }
 }
 
 .inactive {
@@ -95,6 +98,24 @@ p {
       background: $white;
       color: $orange;
     }
+  }
+}
+
+#end {
+  .illustration {
+    height: 100px;
+    width: 150px;
+    background: url('images/illustration-thank-you.svg') no-repeat center / contain;
+  }
+  .selection {
+    color: $orange;
+    background-color: $dark-blue;
+    padding: 6px 14px;
+    border-radius: 44px;
+  }
+  .content {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
