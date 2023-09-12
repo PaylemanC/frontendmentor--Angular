@@ -40,7 +40,9 @@ p {
   background: linear-gradient(0deg, $gradient-1 0%, $gradient-2 100%);
   border-radius: 18px;
   padding: 26px;
-  width: 332px; //max-width + margin
+  min-width: 332px;
+  max-width: 375px;
+  margin: 0 32px;
   .star-icon__container {
     background-color:$dark-blue;
     border-radius: 100%;
@@ -71,7 +73,7 @@ p {
   }
   .rating-form__option {
     color: $light-grey;
-    padding: 12px 16px;
+    padding: 13px 18px;
     border-radius: 100%;
     background-color:$dark-blue;
     border: none;
