@@ -6,9 +6,10 @@ $light-grey: hsl(217, 12%, 63%);
 $medium-grey: hsl(216, 12%, 54%);
 $dark-blue: hsl(213, 19%, 18%); //#252d37
 $very-dark-blue: hsl(216, 12%, 8%); //#121417
+$background: #141519;
 
 div[data-component="container"] {
-  background-color: $very-dark-blue;
+  background-color: $background;
 }
 
 h2, p, input, button {
@@ -30,12 +31,15 @@ p {
 }
 
 .interactive-rating {
-  background-color: $dark-blue; //degradado
+  $gradient-1: #1f242f;
+  $gradient-2: #171e28;
+  background: $gradient-1;
+  background: linear-gradient(0deg, $gradient-1 0%, $gradient-2 100%);
   border-radius: 18px;
   padding: 26px;
   width: 332px;
   .star-icon__container {
-    background-color:crimson; //$dark-blue
+    background-color:$dark-blue;
     border-radius: 100%;
     width: 35px;
     height: 32px;
@@ -51,8 +55,6 @@ p {
   .content__paragraph {
     color: $light-grey;
   }
-  // color: #222732;
-  // color: #191d27;.
 }
 
 #rating-form {
@@ -68,8 +70,17 @@ p {
     color: $light-grey;
     padding: 12px 16px;
     border-radius: 100%;
-    background-color:crimson; //$dark-blue
+    background-color:$dark-blue;
     border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $light-grey;
+      color: $white;
+    }
+    &:focus {
+      background-color: $orange;
+      color: $white;
+    }
   }
   .rating-form__btn-submit {
     border-radius: 32px;
@@ -79,6 +90,11 @@ p {
     font-weight: bold;
     letter-spacing: 2px;
     border: none;
+    cursor: pointer;
+    &:hover {
+      background: $white;
+      color: $orange;
+    }
   }
 }
 
