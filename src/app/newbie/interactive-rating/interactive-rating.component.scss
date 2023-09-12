@@ -20,13 +20,13 @@ p {
   font-size: 15px;
 }
 
-#start { //active
+.active {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-#end {
+.inactive {
   display: none;
 }
 
@@ -37,7 +37,7 @@ p {
   background: linear-gradient(0deg, $gradient-1 0%, $gradient-2 100%);
   border-radius: 18px;
   padding: 26px;
-  width: 332px;
+  width: 332px; //max-width + margin
   .star-icon__container {
     background-color:$dark-blue;
     border-radius: 100%;
