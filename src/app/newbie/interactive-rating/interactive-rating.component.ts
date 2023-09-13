@@ -20,4 +20,18 @@ export class InteractiveRatingComponent implements Challenge {
   difficulty = Difficulty.NEWBIE;
   status: Status = 'IN PROGRESS';
   url = 'https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI';
+
+  selected: number = 0;
+  active: boolean = false;
+  isButtonDisabled = true;
+
+  onSubmit(e: Event) {
+    e.preventDefault();
+    this.active = true;
+  }
+
+  selectedRating(value: number) {
+    this.selected = value;
+    this.isButtonDisabled = false;
+  }
 }

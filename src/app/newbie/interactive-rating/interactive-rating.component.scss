@@ -100,6 +100,11 @@ p {
       background: $white;
       color: $orange;
     }
+    &:disabled {
+      background-color: $medium-grey;
+      color: $dark-blue;
+      cursor: not-allowed;
+    }
   }
 }
 
