@@ -34,10 +34,10 @@ p {
 }
 
 .interactive-rating {
-  $gradient-1: #1f242f;
+  $gradient-1: #222832;
   $gradient-2: #171e28;
   background: $gradient-1;
-  background: linear-gradient(0deg, $gradient-1 0%, $gradient-2 100%);
+  background: linear-gradient(180deg, $gradient-1 0%, $gradient-2 100%);
   border-radius: 18px;
   padding: 26px;
   min-width: 332px;
@@ -46,8 +46,8 @@ p {
   .star-icon__container {
     background-color:$dark-blue;
     border-radius: 100%;
-    width: 35px;
-    height: 32px;
+    width: 46px;
+    height: 43px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ p {
   .content__tittle {
     color: $white;
     font-size: 2.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   .content__paragraph {
     color: $light-grey;
@@ -73,6 +73,7 @@ p {
   }
   .rating-form__option {
     color: $light-grey;
+    font-weight: bold;
     padding: 13px 18px;
     border-radius: 100%;
     background-color:$dark-blue;
@@ -110,6 +111,7 @@ p {
 
 #end {
   .illustration {
+    margin-top: 12px;
     height: 100px;
     width: 150px;
     background: url('images/illustration-thank-you.svg') no-repeat center / contain;
