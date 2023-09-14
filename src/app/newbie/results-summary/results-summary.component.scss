@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+
+$light-slate-blue: hsl(252, 100%, 67%); // (background)
+$light-royal-blue: hsl(241, 81%, 54%); // (background)
+$violet-blue: hsla(256, 72%, 46%, 1); // (circle)
+$persian-blue: hsla(241, 72%, 46%, 0); // (circle)
+
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+//Note: Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+
+* {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+div[data-component="container"] {
+  background-color: $white;
+}
+
+p {
+  font-size: 18px;
+}
+
+//Mobile: 375px, Desktop: 1440px
