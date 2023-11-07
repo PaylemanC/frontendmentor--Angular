@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
-$light-red: hsl(0, 100%, 67%);
-$orangey-yellow: hsl(39, 100%, 56%);
-$green-teal: hsl(166, 100%, 37%);
-$cobalt-blue: hsl(234, 85%, 45%);
+// $light-red: hsl(0, 100%, 67%);
+// $orangey-yellow: hsl(39, 100%, 56%);
+// $green-teal: hsl(166, 100%, 37%);
+// $cobalt-blue: hsl(234, 85%, 45%);
 
 $light-slate-blue: hsl(252, 100%, 67%); // (background)
 $light-royal-blue: hsl(241, 81%, 54%); // (background)
@@ -79,7 +79,7 @@ p {
     font-weight: bold;
     font-size: 1.8rem;
     color: $dark-gray-blue;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -92,7 +92,7 @@ p {
 .summary__test {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 16px;
   border-radius: 10px;
   .summary__test-name {
@@ -104,15 +104,47 @@ p {
       width: 24px;
       height: 24px;
     }
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
   .summary__test-punctuation {
     font-weight: bold;
     color: $dark-gray-blue;
+    font-size: 1.7rem;
     & span:nth-child(2){
       opacity: 50%;
     }
+  }
+}
+
+@mixin test ($color, $icon) {
+    color: $color;
+    background-color: rgba($color, 0.08);
+    .summary__test-icon {
+      background: url('assets/images/#{$icon}.svg') no-repeat center / contain;
+    }
+}
+
+.summary__test {
+  $light-red: hsl(0, 100%, 67%);
+  $orangey-yellow: hsl(39, 100%, 56%);
+  $green-teal: hsl(166, 100%, 37%);
+  $cobalt-blue: hsl(234, 85%, 45%);
+
+  &.reaction {
+    @include test($light-red, 'icon-reaction');
+  }
+
+  &.memory {
+    @include test($orangey-yellow, 'icon-memory');
+  }
+
+  &.verbal {
+    @include test($green-teal, 'icon-verbal');
+  }
+
+  &.visual {
+    @include test($cobalt-blue, 'icon-visual');
   }
 }
 
@@ -124,6 +156,7 @@ p {
   padding: 16px 32px;
   font-size: 1.8rem;
   font-weight: bold;
+  margin-top: 8px;
 }
 
 //Mobile: 375px, Desktop: 1440px
