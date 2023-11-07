@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./module-card.component.scss']
 })
 export class ModuleCardComponent {
-  difficulties: string[] = ['Newbie', 'Junior'] //Intermediate, Advanced, Guru
+  difficulties = [ //Intermediate, Advanced, Guru
+    {
+      'name': 'Newbie',
+      'color': '#f6e6a8'
+    },
+    {
+      'name': 'Junior',
+      'color': '#aceb97'
+    }
+  ]
 }

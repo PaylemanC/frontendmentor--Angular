@@ -1,7 +1,15 @@
 @import './src/styles.scss';
 
 main {
-  background-color: $soft-green; 
+  background-color: $soft-purple;
   padding: 16px;
   font-size: 1.6rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 40px;
+  margin: 24px 32px;
+  justify-items: center;
 }
