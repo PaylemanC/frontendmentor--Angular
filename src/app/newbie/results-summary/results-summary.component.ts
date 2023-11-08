@@ -16,7 +16,6 @@ export class ResultsSummaryComponent implements Challenge {
   - Bonus: Use data to dynamically populate the content`;
   languages = [Language.HTML, Language.CSS, Language.TS];
   difficulty = Difficulty.NEWBIE;
-  status: Status = 'COMPLETED';
   url = 'https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV'
 
   data = [
