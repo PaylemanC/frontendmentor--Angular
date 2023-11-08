@@ -1,5 +1,8 @@
 <a [routerLink]="project.url" class="project-container--link">
   <div class="project-card">
+    <div class="project-status">
+      <p>{{project.status}}</p>
+    </div>
     <div class="project__img--container">
       <img [src]="project.img" alt="Screenshot of project {{project.name | titlecase }}" class="project__img">
     </div>
@@ -16,9 +19,9 @@
       <div class="project-info__description">
         <p>{{project.description}}</p>
       </div>
-      <!-- <ul class="project-info__languages" *ngFor="let language in project.languages">
-        <li>{{language}}</li>
-      </ul> -->
+      <ul class="project-info__languages">
+        <li *ngFor="let language of project.languages">{{language}}</li>
+      </ul>
     </div>
   </div>
 </a>
