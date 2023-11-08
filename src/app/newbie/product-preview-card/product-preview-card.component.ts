@@ -13,6 +13,5 @@ export class ProductPreviewCardComponent implements Challenge {
   description = 'Build a responsive product (perfume) preview card.';
   languages = [Language.HTML, Language.CSS];
   difficulty = Difficulty.NEWBIE;
-  status: Status = 'COMPLETED';
   url = 'https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa';
 }

@@ -18,7 +18,6 @@ export class InteractiveRatingComponent implements Challenge {
     - See the "Thank you" card state after submitting a rating`;
   languages = [Language.HTML, Language.CSS, Language.TS];
   difficulty = Difficulty.NEWBIE;
-  status: Status = 'COMPLETED';
   url = 'https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI';
 
   selected: number = 0;
