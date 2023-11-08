@@ -1,4 +1,4 @@
-@import './src/styles.scss';
+@import '../../../app.component.scss';
 
 footer {
   min-height: 16vh;
@@ -25,7 +25,7 @@ ul {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     a {
-      color: #00636b;
+      color: #4d4e9f;
     }
   }
   a {
