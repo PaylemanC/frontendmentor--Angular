@@ -1,11 +1,11 @@
-<a href="#" class="project-container--link">
+<a [routerLink]="project.url" class="project-container--link">
   <div class="project-card">
-    <div class="project__img">
-      <img src="" alt="Screenshot of project">
+    <div class="project__img--container">
+      <img [src]="project.img" alt="Screenshot of project {{project.name | titlecase }}" class="project__img">
     </div>
     <div class="project-info">
       <div class="project-info__header">
-        <h2 class="project-info__title">Project Tittle</h2>
+        <h2 class="project-info__title">{{project.name | titlecase }}</h2>
         <div class="project-info__arrow">
           <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" color="black" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
             <line y2="12" x2="19" y1="12" x1="5"></line>
@@ -14,12 +14,11 @@
         </div>
       </div>
       <div class="project-info__description">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quia rem nulla cumque eum dicta asperiores dolores eos dolorem accusamus culpa facere delectus.</p>
+        <p>{{project.description}}</p>
       </div>
-      <ul class="project-info__languages">
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
+      <!-- <ul class="project-info__languages" *ngFor="let language in project.languages">
+        <li>{{language}}</li>
+      </ul> -->
     </div>
   </div>
 </a>

@@ -1,6 +1,6 @@
 <main>
   <!-- <a routerLink="/home">Volver al Home</a> -->
   <section class="projects-container">
-    <app-project-card></app-project-card>
+    <app-project-card [project]="project" *ngFor="let project of projects"></app-project-card>
   </section>
 </main>

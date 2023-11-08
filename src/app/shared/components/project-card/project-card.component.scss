@@ -9,6 +9,7 @@
   $border-color: #2a2b31;
   $first-shadow: 8px 8px 0 #70718f;
   $second-shadow: 18px 18px 0 #2c2d41;
+  min-height: 420px;
   transition: 0.15s all ease-in-out;
   border-radius: 10px;
   padding: 5px;
@@ -29,25 +30,30 @@
   }
 }
 
+.project__img-container {
+  width: 100%;
+  height: 250px;
+}
+
 .project__img {
   width: 100%;
-  height: 170px;
-  background: gray;
+  height: 100%;
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid $soft-purple;
 }
 
 .project-info {
-
-  padding-top: 20px;
   padding: 10px;
-  @include flexbox(column, normal, normal, 20px);
+  @include flexbox(column, normal, normal, 8px);
 
   .project-info__header {
     @include flexbox(row, space-between, center, 0);
   }
 
   .project-info__title {
-    font-size: 2em;
+    font-size: 2.4rem;
     margin: 0;
     font-weight: 600;
     color: black;
