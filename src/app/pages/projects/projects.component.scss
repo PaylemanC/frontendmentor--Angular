@@ -1,10 +1,25 @@
-@import './src/styles.scss';
+@import '../../app.component.scss';
 
 main {
   background-color: $soft-purple;
-  padding: 16px;
   font-size: 1.6rem;
   min-height: 84vh;
+}
+
+.intro-banner {
+  // background: #f8ebed;
+  background: url('../../../assets/back.jpg') center / contain;
+  padding: 12px 16px;
+}
+
+.intro {
+  font-size: 1.8rem;
+  text-align: center;
+  color: black;
+  &::first-line {
+    font-weight: bold;
+    font-size: 2rem;
+  }
 }
 
 .projects-container {
@@ -16,10 +31,10 @@ main {
 }
 
 .clarification {
-  color: #181818;
+  color: #292929;
   text-align: center;
-  font-size: 1.7rem;
-  &::first-line {
-    font-weight: bold;
-  }
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 16px;
+  padding-top: 0;
 }
