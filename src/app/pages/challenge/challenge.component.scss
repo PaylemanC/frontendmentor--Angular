@@ -1,0 +1,13 @@
+.back-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  border: 1px solid black;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

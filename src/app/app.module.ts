@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ChallengeComponent } from './pages/challenge/challenge.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ChallengeComponent
   ],
   imports: [
     BrowserModule,
