@@ -45,7 +45,7 @@ export class ProjectsComponent {
       description: 'Insights and summary of an online test covering reaction, memory, verbal and visual abilities.',
       languages: [Language.HTML, Language.CSS],
       difficulty: Difficulty.NEWBIE,
-      status: 'IN PROGRESS',
+      status: 'COMPLETED',
       url: '/results-summary'
     }]
 }
