@@ -1,21 +1,18 @@
 @import '../../../app.component.scss';
 
 footer {
-  min-height: 16vh;
+  @include flexbox(column, center, center, 8px);
   background-color: $pale-pink;
   text-align: center;
+  padding: 16px;
 }
 
 p, a {
   font-size: 1.7rem;
 }
 
-.copyright {
-  padding: 8px 0;
-}
-
 ul {
-  @include flexbox(row, center, center, 36px);
+  @include flexbox(row, center, center, 8px 32px);
   list-style: none;
   flex-wrap: wrap;
 }
