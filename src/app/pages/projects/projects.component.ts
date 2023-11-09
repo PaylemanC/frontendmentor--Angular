@@ -55,7 +55,7 @@ export class ProjectsComponent {
       description: 'Cool NFT card with dark mode.',
       languages: [Language.HTML, Language.CSS],
       difficulty: Difficulty.NEWBIE,
-      status: 'IN PROGRESS',
+      status: 'COMPLETED',
       url: '/nft-preview-card'
     }
   ]
