@@ -7,6 +7,7 @@ import { ProductPreviewCardComponent } from './product-preview-card/product-prev
 import { InteractiveRatingComponent } from './interactive-rating/interactive-rating.component';
 import { ResultsSummaryComponent } from './results-summary/results-summary.component';
 import { NftPreviewCardComponent } from './nft-preview-card/nft-preview-card.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NftPreviewCardComponent } from './nft-preview-card/nft-preview-card.com
     ProductPreviewCardComponent,
     InteractiveRatingComponent,
     ResultsSummaryComponent,
-    NftPreviewCardComponent
+    NftPreviewCardComponent,
+    OrderSummaryComponent
   ],
   imports: [
     CommonModule,

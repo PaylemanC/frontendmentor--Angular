@@ -57,6 +57,16 @@ export class ProjectsComponent {
       difficulty: Difficulty.NEWBIE,
       status: 'COMPLETED',
       url: '/nft-preview-card'
+    },
+    {
+      id: 6,
+      name: 'Order Summary Card',
+      img: './assets/previews/newbie/order-summary-card.jpg',
+      description: 'A short but accurate order summary for an annual music platform subscription, with hover states for interactive elements.',
+      languages: [Language.HTML, Language.CSS],
+      difficulty: Difficulty.NEWBIE,
+      status: 'IN PROGRESS',
+      url: '/challenge'
     }
   ]
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InprogressComponent } from '../pages/inprogress/inprogress.component';
 
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { ProductPreviewCardComponent } from './product-preview-card/product-preview-card.component';
@@ -7,7 +8,7 @@ import { InteractiveRatingComponent } from './interactive-rating/interactive-rat
 import { ResultsSummaryComponent } from './results-summary/results-summary.component';
 import { ChallengeComponent } from '../pages/challenge/challenge.component';
 import { NftPreviewCardComponent } from './nft-preview-card/nft-preview-card.component';
-import { InprogressComponent } from '../pages/inprogress/inprogress.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 const routes: Routes = [
   { path: '', component: ChallengeComponent, children: [
@@ -16,7 +17,8 @@ const routes: Routes = [
     { path: 'product-preview-card', component: ProductPreviewCardComponent },
     { path: 'interactive-rating', component: InteractiveRatingComponent},
     { path: 'results-summary', component: ResultsSummaryComponent},
-    { path: 'nft-preview-card', component: NftPreviewCardComponent}
+    { path: 'nft-preview-card', component: NftPreviewCardComponent},
+    { path: 'order-summary', component: OrderSummaryComponent }
   ]}
 ];
 
