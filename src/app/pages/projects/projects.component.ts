@@ -47,5 +47,16 @@ export class ProjectsComponent {
       difficulty: Difficulty.NEWBIE,
       status: 'COMPLETED',
       url: '/results-summary'
-    }]
+    },
+    {
+      id: 5,
+      name: 'NFT Preview Card',
+      img: './assets/previews/newbie/nft-preview-card.jpg',
+      description: 'Cool NFT card with dark mode.',
+      languages: [Language.HTML, Language.CSS],
+      difficulty: Difficulty.NEWBIE,
+      status: 'IN PROGRESS',
+      url: '/nft-preview-card'
+    }
+  ]
 }

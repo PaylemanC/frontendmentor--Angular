@@ -6,13 +6,15 @@ import { QrCodeComponent } from './qr-code/qr-code.component';
 import { ProductPreviewCardComponent } from './product-preview-card/product-preview-card.component';
 import { InteractiveRatingComponent } from './interactive-rating/interactive-rating.component';
 import { ResultsSummaryComponent } from './results-summary/results-summary.component';
+import { NftPreviewCardComponent } from './nft-preview-card/nft-preview-card.component';
 
 @NgModule({
   declarations: [
     QrCodeComponent,
     ProductPreviewCardComponent,
     InteractiveRatingComponent,
-    ResultsSummaryComponent
+    ResultsSummaryComponent,
+    NftPreviewCardComponent
   ],
   imports: [
     CommonModule,

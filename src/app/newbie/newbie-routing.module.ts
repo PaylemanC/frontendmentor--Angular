@@ -6,13 +6,15 @@ import { ProductPreviewCardComponent } from './product-preview-card/product-prev
 import { InteractiveRatingComponent } from './interactive-rating/interactive-rating.component';
 import { ResultsSummaryComponent } from './results-summary/results-summary.component';
 import { ChallengeComponent } from '../pages/challenge/challenge.component';
+import { NftPreviewCardComponent } from './nft-preview-card/nft-preview-card.component';
 
 const routes: Routes = [
   { path: '', component: ChallengeComponent, children: [
     { path: 'qr-code', component: QrCodeComponent },
     { path: 'product-preview-card', component: ProductPreviewCardComponent },
     { path: 'interactive-rating', component: InteractiveRatingComponent},
-    { path: 'results-summary', component: ResultsSummaryComponent}
+    { path: 'results-summary', component: ResultsSummaryComponent},
+    { path: 'nft-preview-card', component: NftPreviewCardComponent}
   ]}
 ];
 
