@@ -9,6 +9,7 @@ import { LayoutComponent } from './pages/layout/layout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ChallengeComponent } from './pages/challenge/challenge.component';
+import { InprogressComponent } from './pages/inprogress/inprogress.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChallengeComponent } from './pages/challenge/challenge.component';
     LayoutComponent,
     HomeComponent,
     ProjectsComponent,
-    ChallengeComponent
+    ChallengeComponent,
+    InprogressComponent
   ],
   imports: [
     BrowserModule,

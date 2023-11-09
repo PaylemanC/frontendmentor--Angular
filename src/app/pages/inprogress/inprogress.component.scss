@@ -1,0 +1,14 @@
+div[data-component="container"] {
+  background-color: rgb(247, 247, 247);
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+.image {
+  width: 316px;
+  height: 316px;
+  background: url('../../../assets/inprogress.png') no-repeat center / contain;
+  margin: 32px 0;
+}
