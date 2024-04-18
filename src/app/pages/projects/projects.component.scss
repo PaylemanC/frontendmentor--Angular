@@ -20,13 +20,13 @@ main {
     display: inline-block;
     width: 84px;
     height: 84px;
-    background-image: url('../../../assets/icons/angular.svg');
-    background-size: cover;
-    background-position: center;
+    background: url('../../../assets/icons/angular.svg') center/cover;
   }
 
   h2 {
     font-size: 4.8rem;
+    line-height: 1.2;
+    text-align: center;
   }
 }
 
@@ -89,4 +89,11 @@ main {
   grid-gap: 48px;
   margin: 44px 32px 24px;
   justify-items: center;
+}
+
+//media query de desktop:
+@media (max-width: 1024px) {
+  .title--container {
+    flex-direction: column;
+  }
 }
