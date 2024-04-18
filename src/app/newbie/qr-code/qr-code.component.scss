@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import '../../app.component.scss';
 
 $white: hsl(0, 0%, 100%);
 $light-gray: hsl(212, 45%, 89%);
 $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 
-* {
-  font-family: 'Outfit', sans-serif;
-}
-
 div[data-component="container"] {
   background-color: $light-gray;
+}
+
+* {
+  @include fontFamily('Outfit', sans-serif);
 }
 
 .qr-code {

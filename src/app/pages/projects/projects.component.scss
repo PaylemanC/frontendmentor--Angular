@@ -1,25 +1,39 @@
-@import '../../app.component.scss';
+@import 'src/app/app.component.scss';
 
 main {
-  background-color: $soft-purple;
+  background-color: $background;
   font-size: 1.6rem;
-  min-height: 84vh;
+  // min-height: 84vh;
 }
 
-.intro-banner {
-  // background: #f8ebed;
-  background: url('../../../assets/back.jpg') center / contain;
-  padding: 12px 16px;
+.banner {
+  background: $dark;
+  color: white;
+  padding: 32px 16px;
+}
+
+.title--container {
+  @include flexbox(row, center, center, 16px);
+  flex-wrap: wrap;
+
+  .angular-icon {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    background-image: url('../../../assets/icons/angular.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+  }
 }
 
 .intro {
   font-size: 1.8rem;
   text-align: center;
-  color: black;
-  &::first-line {
-    font-weight: bold;
-    font-size: 2rem;
-  }
+  margin: 24px 0;
 }
 
 .projects-container {
@@ -28,13 +42,4 @@ main {
   grid-gap: 48px;
   margin: 44px 32px 24px;
   justify-items: center;
-}
-
-.clarification {
-  color: #292929;
-  text-align: center;
-  font-size: 1.6rem;
-  font-style: italic;
-  padding: 24px 16px;
-  padding-top: 0;
 }

@@ -1,14 +1,23 @@
-@import '../../../app.component.scss';
+@import 'src/app/app.component.scss';
+
+.clarification {
+  background-color: $background;
+  color: #292929;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 24px 16px;
+}
 
 footer {
   @include flexbox(column, center, center, 8px);
-  background-color: $pale-pink;
+  background-color: $dark;
   text-align: center;
   padding: 16px;
 }
 
 p, a {
   font-size: 1.7rem;
+  color: white;
 }
 
 ul {
@@ -22,12 +31,23 @@ ul {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     a {
-      color: #4d4e9f;
+      color: #c1c1f1;
     }
   }
+
+  .link-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../../../../assets/icons/external-link.svg');
+    cursor: pointer;
+  }
+
   a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     letter-spacing: 4px;
     text-decoration: none;
-    color: #1c1c1c;
   }
 }

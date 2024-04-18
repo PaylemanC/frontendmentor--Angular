@@ -1,1 +1,8 @@
 @import '../styles.scss';
+
+@mixin fontFamily($font-family, $fallback-font-family) {
+  font-family: $font-family, $fallback-font-family;
+  p, h1, h2, h3, input, button, span {
+    font-family: $font-family, $fallback-font-family;
+  }
+}

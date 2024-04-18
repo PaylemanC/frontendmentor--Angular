@@ -3,6 +3,8 @@
 /*COLOR PALETTE*/
 $white: #FFFFFF;
 $black: #000000;
+$background: #f7f7f7;
+$dark: #232125;
 $soft-purple: #b2b3eb;
 $aqua: #20ccd8;
 $soft-green: #aceb97;
@@ -31,7 +33,7 @@ div[data-component="container"] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji";
 }
 
 html {
