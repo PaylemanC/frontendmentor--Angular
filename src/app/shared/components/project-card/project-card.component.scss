@@ -34,14 +34,13 @@ $border-color: #2a2b31;
 
 .project-status {
   position: absolute;
-  // background: #e6e7ff;
-  background: $pale-pink;
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: 2px solid $border-color;
-  top: -20px;
-  right: 20px;
-  font-size: 1.8rem;
+  background: $background;
+  padding: 8px 14px;
+  border-radius: 14px;
+  border: 3px solid $border-color;
+  top: -25px;
+  right: 12px;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
